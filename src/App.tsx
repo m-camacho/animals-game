@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.scss";
-import { Animal, animals, GAME_STATE } from "./constants";
+import { Animal, animals, GAME_STATE, hiddenUrl } from "./constants";
 import Button from "react-bootstrap/Button";
 
 function App() {
@@ -73,6 +73,11 @@ function App() {
             <img src={hiddenAnimal.imageUrl} alt={hiddenAnimal.name} />
           </div>
         )}
+      {hiddenAnimal && gameStatus === GAME_STATE.IN_PROGRESS && (
+        <div className="hidden-animal">
+          <img src={hiddenUrl} alt="hidden-animal" />
+        </div>
+      )}
     </div>
   );
 }

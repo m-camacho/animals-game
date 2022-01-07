@@ -1,8 +1,19 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
 .game {
   text-align: center;
   width: 100%;
   padding: 16px;
   background-color: lightsteelblue;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 
   &.player-loses {
     background-color: lightsalmon;
@@ -24,6 +35,8 @@
   }
 
   .hidden-animal {
+    margin: 16px 0;
+
     .name {
       text-transform: uppercase;
       font-weight: bold;
