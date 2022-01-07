@@ -4,6 +4,19 @@
   padding: 16px;
   background-color: lightsteelblue;
 
+  &.player-loses {
+    background-color: lightsalmon;
+  }
+
+  &.player-wins {
+    background-color: lightgreen;
+  }
+
+  .game-status-text span {
+    color: red;
+    font-weight: bolder;
+  }
+
   .option-buttons {
     button {
       margin: 4px;

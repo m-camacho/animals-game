@@ -1,6 +1,13 @@
+export const GAME_STATE = {
+  IN_PROGRESS: "game-in-progress",
+  PLAYER_WINS: "player-wins",
+  PLAYER_LOSES: "player-loses"
+};
+
 export interface Animal {
   name?: string;
   imageUrl?: string;
+  pressed?: boolean;
 }
 
 export const animals: Animal[] = [
@@ -49,3 +56,6 @@ export const animals: Animal[] = [
       "https://images.ecestaticos.com/pqIAcGCEagnkjdIBVKVbC9i5FH4=/0x0:1920x1278/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fe8e%2Fe27%2F2bf%2Fe8ee272bfd36f69679936351209d708c.jpg"
   }
 ];
+
+export const hiddenUrl =
+  "https://previews.123rf.com/images/nexusby/nexusby1903/nexusby190300008/119103903-hide-icon-with-eye-hidden-content.jpg";
