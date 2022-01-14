@@ -7,7 +7,7 @@ export const GAME_STATE = {
 export const HINTS = {
   HAS_4_LEGS: "Tiene 4 patas",
   FUR_COVERED: "Su cuerpo esta cubierto de pelo",
-  DOMESTIC_ANIMAL: "Es un ainmal domestico",
+  DOMESTIC_ANIMAL: "Es un animal domestico",
   WILD_ANIMAL: "Es un animal salvaje",
   HAS_FEATHERS: "Tiene el cuerpo cubierto de plumas",
   HAS_HORNS: "Tiene cuernos en la cabeza",
